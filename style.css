@@ -1,14 +1,15 @@
 *{
-    margin:0;
+    box-sizing: border-box;
 }
 body{
+    margin: 0;
     display:flex;
     flex:1;
     background-repeat: no-repeat; 
     background-size: 100vw 100vh;
-    background-image: url(imagens/temporada-10.jpeg);
+    background-image: url(assets/image/background/fundo_desktop.jpeg);
     background-attachment: fixed;
-
+    overflow-y: hidden;
 }   
 main{
    display:flex;
@@ -18,25 +19,20 @@ main{
    overflow-y: scroll;
    width:100vw;
    height:100vh;
-   gap:8rem;
-
+   gap:8rem 8rem;
 }
 main div img{
-    
     width:25vw;
     height:30vh;
     border-radius:2vh;
 }
 main div:nth-child(1){
-    margin-top:50vh;
+    margin-top:98vh;
     margin-bottom: 10vh;
     display:flex;
     flex-direction:column;
     gap:8rem 8rem;
-    margin-left:1vw;
-    
-
-
+    margin-left:3vw;
 }
 main div:nth-child(2){
     margin-top:50vh;
@@ -53,4 +49,164 @@ main div:nth-child(3){
     display:flex;
     flex-direction:column;
     gap:8rem 8rem;
+}
+
+@media (max-width:980px) and (orientation:horizontal) {
+
+    body{
+        margin: 0;
+        display:flex;
+        flex:1;
+        background-repeat: no-repeat; 
+        background-size: 100vw 100vh;
+        background-image: url(assets/image/background/fundo_tablet.jpg);
+        background-attachment: fixed;
+        overflow-y: hidden;
+    }   
+    main{
+       display:flex;
+       align-items: center;
+       backdrop-filter:blur(5px);
+       background-size: 140vh;
+       overflow-y: scroll;
+       width:100vw;
+       height:100vh;
+       gap:4rem 4rem;
+    }
+    main div img{
+        width:25vw;
+        height:25vh;
+        border-radius:1vh;
+    }
+    main div:nth-child(1){
+        margin-top:38vh;
+        margin-bottom: 0vh;
+        display:flex;
+        flex-direction:column;
+        gap:4rem 4rem;
+        margin-left:5vw;
+    }
+    main div:nth-child(2){
+        margin-top:5vh;
+        margin-bottom: 0vh;
+        display:flex;
+        flex-direction:column;
+        gap:4rem 4rem;
+    
+    
+    }
+    main div:nth-child(3){
+        margin-top:15vh;
+        margin-bottom: 10vh;
+        display:flex;
+        flex-direction:column;
+        gap:4rem 4rem;
+    }
+}
+
+@media (max-width:980px)  {
+
+    body{
+        margin: 0;
+        display:flex;
+        flex:1;
+        background-repeat: no-repeat; 
+        background-size: 100vw 100vh;
+        background-image: url(assets/image/background/fundo_tablet.jpg);
+        background-attachment: fixed;
+        overflow-y: hidden;
+    }   
+    main{
+       display:flex;
+       align-items: center;
+       backdrop-filter:blur(5px);
+       background-size: 140vh;
+       overflow-y: scroll;
+       width:100vw;
+       height:100vh;
+       gap:4rem 4rem;
+    }
+    main div img{
+        width:25vw;
+        height:25vh;
+        border-radius:1vh;
+    }
+    main div:nth-child(1){
+        margin-top:48vh;
+        margin-bottom: 10vh;
+        display:flex;
+        flex-direction:column;
+        gap:4rem 4rem;
+        margin-left:5vw;
+    }
+    main div:nth-child(2){
+        margin-top:5vh;
+        margin-bottom: 0vh;
+        display:flex;
+        flex-direction:column;
+        gap:4rem 4rem;
+    
+    
+    }
+    main div:nth-child(3){
+        margin-top:15vh;
+        margin-bottom: 10vh;
+        display:flex;
+        flex-direction:column;
+        gap:4rem 4rem;
+    }
+}
+
+@media (max-width:580px) {
+
+    body{
+        margin: 0;
+        display:flex;
+        flex:1;
+        background-repeat: no-repeat; 
+        background-size: 100vw 100vh;
+        background-image: url(assets/image/background/fundo_celular.jpg);
+        background-attachment: fixed;
+        overflow-y: hidden;
+    }   
+    main{
+       display:flex;
+       flex-direction: column;
+       align-items: center;
+       backdrop-filter:blur(5px);
+       background-size: 140vh;
+       overflow-y: scroll;
+       width:100vw;
+       height:100vh;
+       gap:2rem 2rem;
+    }
+    main div img{
+        width:70vw;
+        height:30vh;
+        border-radius:1vh;
+    }
+    main div:nth-child(1){
+        margin-top:10vh;
+        margin-bottom: 0vh;
+        display:flex;
+        flex-direction:column;
+        gap:4rem 4rem;
+        margin-left:1vw;
+    }
+    main div:nth-child(2){
+        margin-top:5vh;
+        margin-bottom: 0vh;
+        display:flex;
+        flex-direction:column;
+        gap:4rem 4rem;
+    
+    
+    }
+    main div:nth-child(3){
+        margin-top:5vh;
+        margin-bottom: 10vh;
+        display:flex;
+        flex-direction:column;
+        gap:4rem 4rem;
+    }
 }
